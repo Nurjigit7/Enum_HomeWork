@@ -7,27 +7,16 @@ public enum Days {
     FRIDAY("Жума :"),
     SATURDAY("Ишемби :"),
     SUNDAY("Жекшемби :");
-    private String plan_days;
+    private final String days;
 
-    Days(String plan_days) {
-        this.plan_days = plan_days;
+    Days(String days) {
+        this.days = days;
     }
     @Override
     public String toString() {
         return "Days{" +
-                "plan_days='" + plan_days + '\'' +
+                "plan_days='" + days + '\'' +
                 '}';
     }
-
-    public static void methodExit(int san){
-      String word;
-        if (san==0){
-            throw new MyException("Программа токтоду!!!");
-        }else {
-            System.out.println("Улантабыз=> :");
-        }
-    }
-
-
 
 }
